@@ -5,7 +5,7 @@
 
 using namespace cv;
 
-// ÖØ½¨Laplacian½ğ×ÖËş
+// Ã–Ã˜Â½Â¨LaplacianÂ½Ã°Ã—Ã–Ã‹Ã¾
 
 Mat reconstruct_laplacian_pyramid(const vector<Mat>& im_v){
     Mat cur=im_v.back(),filter=pyramid_filter();
