@@ -60,7 +60,7 @@ Mat Saturation(const Mat& img){
 
 // 算曝光性（单通道）
 Mat WellExposedness(const Mat& img){
-	// img: CV_32FC3 in [0,1]
+	// img 为 CV_32FC3，范围 [0,1]
 	vector<Mat>ch;
 	split(img,ch);
 	Mat well=Mat::ones(img.size(),CV_32F);
