@@ -5,9 +5,9 @@
 
 using namespace cv;
 
-// ¹¹½¨¸ßË¹½ğ×ÖËş£¨ÓÃÓÚÈ¨ÖØ£©
+// æ„å»ºé«˜æ–¯é‡‘å­—å¡”ï¼ˆç”¨äºæƒé‡ï¼‰
 vector<Mat>gaussian_pyramid(const Mat& img,int levels){
-    vector<Mat>im_v;//´æ½ğ×ÖËşÃ¿²ãÍ¼Ïñ
+    vector<Mat>im_v;//å­˜é‡‘å­—å¡”æ¯å±‚å›¾åƒ
     Mat cur=img.clone(),filter=pyramid_filter();
     im_v.push_back(cur);
     for(int i=0;i<levels-1;++i){
