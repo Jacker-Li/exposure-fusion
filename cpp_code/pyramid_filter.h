@@ -8,5 +8,4 @@ using namespace cv;
 
 Mat pyramid_filter();
 
-
 #endif // pyramid_filter_H
