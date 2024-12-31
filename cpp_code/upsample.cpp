@@ -3,7 +3,7 @@
 
 using namespace cv;
 
-// 上采样并滤波
+// 脡脧虏脡脩霉虏垄脗脣虏篓
 Mat upsample(const Mat& img,const Size& sz,const Mat& filter){
     Mat tmp,up;
     resize(img,up,sz,0,0,INTER_LINEAR);
