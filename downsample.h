@@ -6,7 +6,6 @@
 
 using namespace cv;
 
-
 Mat downsample(const Mat& img,const Mat& filter);
 
 #endif // downsample_H
