@@ -7,7 +7,7 @@
 using namespace std;
 using namespace cv;
 
-// ¹¹½¨Laplacian½ð×ÖËþ
+// Â¹Â¹Â½Â¨LaplacianÂ½Ã°Ã—Ã–Ã‹Ã¾
 vector<Mat>laplacian_pyramid(const Mat& img,int levels){
     vector<Mat>im_v;
     Mat cur=img.clone(),filter=pyramid_filter();
@@ -15,6 +15,6 @@ vector<Mat>laplacian_pyramid(const Mat& img,int levels){
         Mat down=downsample(cur,filter),up=upsample(down,cur.size(),filter),Lap=cur-up;
         im_v.push_back(Lap);
         cur=down;
-    }im_v.push_back(cur);//×îµ×²ã
+    }im_v.push_back(cur);//Ã—Ã®ÂµÃ—Â²Ã£
     return im_v;
 }
